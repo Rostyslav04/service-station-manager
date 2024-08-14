@@ -1,0 +1,10 @@
+@import './globals.css';
+
+/* components */
+@import './components/input.css';
+@import './components/search.css';
+@import './components/ThemeButton.css';
+
+/* Pages */
+@import './pages/pages.css';
+@import './pages/components.css';

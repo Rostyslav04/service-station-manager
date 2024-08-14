@@ -1,0 +1,80 @@
+.NameBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pageName {
+    padding-left: 26px;
+}
+
+.buttonCreate {
+    margin-top: 15px;
+    border: 0px currentcolor;
+    width: 150px;
+    height: 40px;
+    margin-right: 16px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.71429;
+    border-radius: 8px;
+    color: #f8f9fa;
+    background-color: #16b364;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        box-shadow: #087443 0px 8px 8px 0px;
+        transform: translateY(-8px);
+    }
+}
+
+.card {
+    width: 190px;
+    height: 300px;
+    padding: 5px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    border-radius: 25px;
+    background-color: #ffffff;
+    box-shadow: #6d6f7093 0px 6px 12px 0px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        box-shadow: #6d6f7093 0px 16px 32px 0px;
+        transform: translateY(-8px);
+    }
+}
+
+.cardIMG {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+}
+
+.cardText {
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.cardInfo {
+    padding: 2px 0 2px 0;
+    display: flex;
+}
+
+.cardInvested {
+    padding: 0 5px;
+    color: #f04438;
+}
+
+.cardPrice {
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #32bc77;
+}

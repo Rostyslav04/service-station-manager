@@ -1,0 +1,510 @@
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+    -webkit-user-select: none;
+    overflow: hidden;
+}
+
+.form {
+    width: 70%;
+}
+
+.button {
+    margin-top: 15px;
+    border: 0 currentcolor;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.71429;
+    text-transform: unset;
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    background-color: #16b364;
+    transition:
+        background-color 0.5s ease-in-out,
+        box-shadow 0.5s ease-in-out,
+        transform 0.3s ease-in-out;
+}
+
+.button:hover {
+    box-shadow: #087443 0px 8px 16px 0px;
+    transform: translateY(-8px);
+}
+
+.form__group {
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.sidebar {
+    padding-left: 16px;
+    padding-right: 16px;
+    height: 100%;
+    width: 250px;
+    overflow-x: hidden;
+}
+
+.sidebarDisable {
+    display: none;
+}
+
+.closeSidebar {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    cursor: pointer;
+}
+
+.buttonBox {
+    font-size: 22px;
+    padding-top: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    :hover {
+        cursor: pointer;
+        background-color: #252e3e;
+        border-radius: 8px;
+    }
+}
+
+.sidebarButton {
+    display: flex;
+    align-items: center;
+    color: #9ba2ab;
+    width: 100%;
+    height: 100%;
+    padding: 6px;
+    margin: 5px;
+    font-weight: 550;
+
+    svg {
+        color: #9ba2ab;
+    }
+
+    & * [data-active='1'] {
+        display: flex;
+        align-items: center;
+        color: #fefefe;
+        background-color: #252e3e;
+        border-radius: 8px;
+        width: 100%;
+        height: 100%;
+        padding: 6px;
+        margin: 5px;
+        font-weight: 550;
+
+        svg {
+            color: #16b364;
+        }
+    }
+
+    & * [data-active='0'] {
+    }
+}
+
+.icoButton {
+    width: 50px;
+    height: 24px;
+}
+
+.logoBlock {
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 25px;
+}
+
+.logo {
+    width: 52px;
+    height: 52px;
+}
+
+.textLogo {
+    font-size: 24px;
+    color: black;
+    padding-left: 10px;
+    font-weight: 550;
+    transition:
+        background-color 0.5s ease-in-out,
+        border-color 0.5s ease-in-out;
+}
+
+.textLogo2 {
+    color: #16b364;
+    font-weight: 400;
+    font-size: 20px;
+    transition:
+        background-color 0.5s ease-in-out,
+        border-color 0.5s ease-in-out;
+}
+
+.sidebarStyle {
+    width: 235px;
+    height: 379px;
+    border-radius: 25px;
+    background-color: #1c2536;
+    border: 3px solid #16b364;
+    transition:
+        background-color 0.5s ease-in-out,
+        border-color 0.5s ease-in-out;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1220px;
+    height: 70px;
+}
+
+.page {
+    display: flex;
+    width: 101%;
+    height: 100%;
+    transition:
+        background-color 0.5s ease-in-out,
+        border-color 0.5s ease-in-out;
+}
+
+.icoHeader {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    margin: 0 16px;
+    color: #6c737f;
+}
+
+.content {
+    width: 83vw;
+    height: 90%;
+}
+
+.NameBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+    font-weight: 700;
+    color: #1c2536ff;
+}
+
+.pageName {
+    padding-left: 26px;
+    padding-bottom: 16px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    transition:
+        background-color 0.5s ease-in-out,
+        border-color 0.5s ease-in-out;
+}
+
+.DollarSvg {
+    width: 20px;
+    height: 20px;
+    top: 0;
+    right: 0;
+    transform: translateY(38%);
+    color: #9ba2ab;
+}
+
+.buttonCreate {
+    margin-top: 15px;
+    border: 0px currentcolor;
+    width: 150px;
+    height: 40px;
+    margin-right: 16px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.71429;
+    border-radius: 8px;
+    color: #f8f9fa;
+    background-color: #16b364;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+    &:hover {
+        box-shadow: #087443 0px 8px 8px 0px;
+        transform: translateY(-8px);
+    }
+}
+
+.card {
+    width: 190px;
+    height: 350px;
+    padding: 5px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    border-radius: 25px;
+    background-color: #ffffff;
+    box-shadow: #6d6f7093 0px 6px 12px 0px;
+    cursor: pointer;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background-color 0.5s ease-in-out,
+        border-color 0.5s ease-in-out;
+
+    &:hover {
+        box-shadow: #6d6f7093 0px 16px 32px 0px;
+        transform: translateY(-8px);
+    }
+}
+
+.cardIMG {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+}
+
+.cardText {
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.cardInfo {
+    padding: 2px 0 2px 0;
+    display: flex;
+}
+
+.cardInvested {
+    padding: 0 5px;
+    color: #f04438;
+}
+
+.cardPrice {
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #32bc77;
+}
+
+.twoElementsFlex {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.inputBox {
+    width: 51%;
+    height: 100%;
+    padding: 0 16px;
+}
+
+.photoBox {
+    width: 50%;
+    height: 100%;
+    padding: 0 16px;
+}
+
+.yearInput {
+    width: 50%;
+}
+
+.inputCenter {
+    padding: 0 16px;
+    text-transform: uppercase;
+}
+
+.selectYear {
+    margin-top: 10px;
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid #9ba2ab;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+
+    &:focus {
+        border-color: #16b364;
+    }
+}
+
+.dateBlock {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dateBlockButton {
+    width: 250px;
+}
+
+.optionYear {
+    background-color: #fff;
+    color: #333;
+    font-weight: 600;
+
+    &:hover {
+        background-color: #f0f0f0;
+    }
+
+    &:disabled {
+        color: #999;
+    }
+}
+
+.selectedDate[type='date'] {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 14px;
+    border: 2px solid #9ba2ab;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+
+    &:focus {
+        border-color: #16b364;
+    }
+}
+
+.priseBox {
+    display: flex;
+    width: 40%;
+    position: relative;
+}
+
+.icoPrise {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(120%);
+    color: #9ba2ab;
+}
+
+.pageContent {
+    margin-right: 300px;
+    display: flex;
+    flex-direction: column;
+    width: 101%;
+    height: 85vh;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+        width: 8px;
+        height: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: none;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #9ba2ab;
+        border-radius: 16px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: #16b364;
+    }
+}
+
+.workListCreate {
+    margin: 24px;
+    border: 3px dashed #9ba2ab;
+    border-radius: 16px;
+}
+
+.buttonAddCarBox {
+    max-width: 97%;
+    margin-bottom: 40px;
+    padding: 0 16px;
+}
+
+.galleryBox {
+    width: 50%;
+    height: auto;
+}
+
+.infoBox {
+    width: 49%;
+    height: auto;
+}
+
+.info {
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.static {
+    display: flex;
+    align-items: center;
+    color: #6c737f;
+    font-size: 28px;
+
+    &:not(:last-child) {
+        margin-bottom: 1px;
+    }
+}
+
+.dynamic {
+    margin-left: 8px;
+    font-weight: 700;
+    color: black;
+}
+
+.PlateSize {
+    max-width: 200px;
+}
+
+.cardBox {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Buttons_WL_or_PL_Block {
+    display: flex;
+    justify-content: end;
+    height: 38px;
+    width: 96%;
+    margin: 0 25px;
+    border-bottom: 2px solid #6c737f;
+}
+
+.Buttons_WL_or_PL {
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    background-color: #9ba2ab;
+    color: #fff;
+    border: 2px solid #6c737f;
+    border-radius: 8px;
+
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+.Buttons_WL_or_PL.active {
+    background-color: #16b364;
+}
+
+@media (max-width: 480px) {
+}
+
+@media (min-width: 481px) {
+}

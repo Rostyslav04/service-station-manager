@@ -1,0 +1,13 @@
+export { LogoSvg } from './LogoSvg';
+export { ArrowSvg } from './ArrowSvg';
+export { DollarSvg } from './DollarSvg';
+export { HomeSvg } from './HomeSvg';
+export { LoadingSvg } from './LoadingSvg';
+export { DoubleToolsSvg } from './DoubleToolsSvg';
+export { MenuSvg } from './MenuSvg';
+export { SearchSvg } from './SearchSvg';
+export { ExitSvg } from './ExitSvg';
+export { default as RecycleBinSvg } from './RecycleBin';
+export { Complete } from './Complete';
+export { Complete2 } from './Complete2';
+export { SunSvg } from './SunSvg';
